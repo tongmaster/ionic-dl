@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="col-md-6 pdr-md-7">
+    <region [(data)]="region" (dataShow)="show($event)"></region>
+</div>
+<div class="col-md-6 pdl-md-7">
+    <province [(data)]="province"  [filter]="region" ></province>
+</div>
+</ion-content>
